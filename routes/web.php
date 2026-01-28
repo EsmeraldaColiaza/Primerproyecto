@@ -8,7 +8,7 @@ use App\Http\Controllers\PrincipalController;
 
 Route::get('/hello',HomeController::class);
 Route::get('/posts/mensaje', [PostController::class, 'Mensaje']);
-
+Route::get('post/about/{param?}/{name}', [PrincipalController::class, 'About']);
 
 
 
